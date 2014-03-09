@@ -1,0 +1,5 @@
+<select ng-model="strictsearch.pos">
+	<option value="">All positions</option>
+	<option ng-repeat="position in positions" value="{{ $index }}">{{ position.abbr }}</option>
+	{# Normally, the ng-options directive would be used here, but you need the $index iterator, so ng-repeat is substituted. #}
+</select>
